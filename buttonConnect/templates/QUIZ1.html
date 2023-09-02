@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="JRS.css">
+<script type="text/javascript" src="JRS.js"></script>
+<form action = "connect1.php" method="post" class="page1" id="page1" style="padding:10px;">
+
+    <div class="heading" id="heading">Programming Languages Known: </div>
+    <div class="radio_btn">
+        <input type="checkbox" id="ans1op1" name="java" value="java" >
+        <label for="ans1op1" > Java </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="python" id="ans1op2" name="python">
+        <label for="ans1op2" > Python </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="CCpp" id="ans1op3" name="CCpp" >
+        <label for="ans1op3" > C/C++ </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="HTML" id="ans1op4" name="HTML">
+        <label for="ans1op4" > HTML </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="CSS" id="ans1op5" name="CSS">
+        <label for="ans1op5" > CSS </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="Js" id="ans1op6" name="Js">
+        <label for="ans1op6" > Javascript </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="Sequel" id="ans1op7" name="Sequel">
+        <label for="ans1op7" > SQL </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="kotlin" id="ans1op8" name="kotlin">
+        <label for="ans1op8" > Kotlin </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="CHash" id="ans1op9" name="CHash">
+        <label for="ans1op9" > C# </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="dotNet" id="ans1op10" name="dotNet">
+        <label for="ans1op10" > .Net </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="php" id="ans1op11" name="php">
+        <label for="ans1op11" > PHP </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="R" id="ans1op12" name="R">
+        <label for="ans1op12" > R </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" value="ruby" id="ans1op13" name="ruby">
+        <label for="ans1op13" > Ruby </label>
+    </div>
+    <div class="radio_btn">
+        <input type="checkbox" id="other" name="interest">
+        <label for="other">Others</label>
+        <input type="text" id="otherValue" name="other">
+    </div>
+    <div class="submit_btn_quiz" id="submit_btn_quiz">
+        <button type="submit" name="submit_btn" form="page1" onclick="page1()">Submit</button>
+    </div>
+</form>
+
+<script>
+    const otherCheckbox = document.querySelector('#other');
+    const otherText = document.querySelector('#otherValue');
+    otherText.style.visibility = 'hidden';
+
+    otherCheckbox.addEventListener('change', () => {
+        if (otherCheckbox.checked) 
+        {
+            otherText.style.visibility = 'visible';
+            otherText.value = '';
+        } 
+        else 
+        {
+            otherText.style.visibility = 'hidden';
+        }
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="JRS.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="JRS.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<div class="quiz_box">
+        <div class="header">
+            <h1 style="padding:10px;"> Search :</h1>
+        </div>
+    <form action = "search.php" method="POST" class="search" id="search" style="padding:10px;">
+        <div class="search_element">
+            <label for="job">Job :</label>
+            <select name="job" id="job" class="inp" >
+                <option value="appDev" id="appDev">App Dev</option>
+                <option value="Back-end Dev" id="Back-end Dev">Back-end Dev</option>
+                <option value="Front-end Dev" id="Front-end Dev">Front-end Dev</option>
+                <option value="dbAdmin" id="dbAdmin">DB Admin</option>
+                <option value="DB Dev" id="DB Dev">DB Dev</option>
+                <option value="Fullstack Dev" id="Fullstack Dev">Full-stack Dev</option>
+                <option value="Sde" id="Sde">Sde</option>
+                <option value="Testing" id="Testing">Testing</option>
+                <option value="Data Scientist" id="Data Scientist">Data Scientist</option>
+                <option value="Data Analyst" id="Data Analyst">Data Analyst</option>
+                <option value="MLEngineer" id="MLEngineer">ML Engineer</option>
+                <option value="Cloud Architect" id="Cloud Architect">Cloud Architect</option>
+                <option value="Cloud Security Analyst" id="Cloud Security Analyst">Cloud Security Analyst</option>
+                <option value="Project Coordinator" id="Project Coordinator">Project Coordinator</option>
+                <option value="Business Analyst" id="Business Analyst">Business Analyst</option>
+                <option value="SEO Specialist" id="SEO Specialist">SEOSpecialist</option>
+                <option value="SocialMedia Marketing" id="SocialMedia Marketing">Social-Media Marketing</option>
+            </select>
+        </div>
+        <div class="search_element">
+            Min. Aptitude Score :
+            <input type="text" id="job" name="AptitudeScore" class="inp" placeholder="(1-10)">
+        </div>
+        <div class="search_element">
+            Min. Technical Score :
+            <input type="text" id="job" name="TechnicalScore" class="inp" placeholder="(1-10)">
+        </div>
+
+            <div class="submit_btn_quiz" id="submit_btn_quiz">
+                <button type="submit" name="submit_btn" form="search" >Submit</button>
+            </div>
+            
+    </form>
+</div>
+
+</body>
+</html>
