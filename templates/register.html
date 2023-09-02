@@ -1,0 +1,36 @@
+<!doctype html>
+<html>  
+<head>
+<title> portfolio website </title>
+<link rel="stylesheet" href="stylesheet.css"/>
+</head>
+
+<body><center>
+	<nav>
+		<label class="logo">Portfolio</label>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a class ="active" href="register.html">Services</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+	</nav>
+ 
+<form action="servlet/Register.java" method="post">  
+  
+Name:<input type="text" name="userName"/><br/><br/>  
+Password:<input type="password" name="userPass"/><br/><br/>  
+Email Id:<input type="text" name="userEmail"/><br/><br/>  
+Country:  
+<select name="userCountry">  
+<option>India</option>  
+<option>Pakistan</option>  
+<option>other</option>  
+</select>  
+  
+<br/><br/>  
+<input type="submit" value="register"/>  
+  
+</form>  
+</body>  
+</html>

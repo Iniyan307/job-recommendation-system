@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="JRS.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="JRS.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<div class="quiz1">
+<form action = "connect1.php" method="post" class="page1" id="page1" style="padding:10px;" onsubmit="quizQuestions()">
+
+    <div class="heading" id="heading">Programming Languages Known: </div>
+    <div class="list">
+    
+
+    <div class="form-element">
+        <input type="checkbox" id="ans1op1" name="java" value="java" >
+        <label for="ans1op1" >
+            <div class="icon">
+                <i class="fa fa-brands fa-java" style="color:black"></i>
+            </div>
+            <div class="title">
+                Java
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="python" id="ans1op2" name="python">
+        <label for="ans1op2" >
+            <div class="icon">
+                <i class="fa fa-brands fa-python"></i>
+            </div>
+            <div class="title">
+                Python
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="CCpp" id="ans1op3" name="CCpp" >
+        <label for="ans1op3" >
+            <div class="icon">
+                <i class="fa fa-solid fa-c"></i>
+            </div>
+            <div class="title">
+                C / C++
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="HTML" id="ans1op4" name="HTML">
+        <label for="ans1op4" >
+            <div class="icon">
+                <i class="fa fa-brands fa-html5"></i>
+            </div>
+            <div class="title">
+                HTML
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="CSS" id="ans1op5" name="CSS">
+        <label for="ans1op5" >
+            <div class="icon">
+                <i class="fa fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="title">
+                CSS
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="Js" id="ans1op6" name="Js">
+        <label for="ans1op6" >
+            <div class="icon">
+                <i class="fa fa-brands fa-js"></i>
+            </div>
+            <div class="title">
+                JavaScript
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="Sequel" id="ans1op7" name="Sequel">
+        <label for="ans1op7" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                SQL
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="kotlin" id="ans1op8" name="kotlin">
+        <label for="ans1op8" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                Kotlin
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="CHash" id="ans1op9" name="CHash">
+        <label for="ans1op9" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                C#
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="dotNet" id="ans1op10" name="dotNet">
+        <label for="ans1op10" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                .Net
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="php" id="ans1op11" name="php">
+        <label for="ans1op11" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                PHP
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="R" id="ans1op12" name="R">
+        <label for="ans1op12" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                R
+            </div>
+        </label>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" value="ruby" id="ans1op13" name="ruby">
+        <label for="ans1op13" >
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                Ruby
+            </div>
+        </label>
+    </div>
+<!--
+    <div class="form-element">
+        <input type="checkbox" id="other" name="interest">
+        <label for="other">
+            <div class="icon">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="title">
+                Others
+            </div>
+        </label>
+        <input type="text" id="otherValue" name="other">
+    </div>
+-->
+</div>
+    <div class="submit_btn_quiz" id="submit_btn_quiz">
+        <button type="submit" name="submit_btn" form="page1" >Submit</button>
+    </div>
+
+
+</form>
+
+<!-- <script>
+//     const otherCheckbox = document.querySelector('#other');
+//     const otherText = document.querySelector('#otherValue');
+//     otherText.style.visibility = 'hidden';
+
+//     otherCheckbox.addEventListener('change', () => {
+//         if (otherCheckbox.checked) 
+//         {
+//             otherText.style.visibility = 'visible';
+//             otherText.value = '';
+//         } 
+//         else 
+//         {
+//             otherText.style.visibility = 'hidden';
+//         }
+//     });
+ </script>-->
+
+</div>
+</body>
+</html>
